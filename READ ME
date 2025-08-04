@@ -1,0 +1,75 @@
+Azure Infrastructure Project: Custom VM Deployment with Firewall Security
+Project Overview
+This project demonstrates advanced Azure cloud infrastructure skills by implementing a complete solution that includes:
+•	Custom VM Image Creation using Azure Compute Gallery
+•	Multi-VM Deployment from custom images
+•	Network Security with Azure Firewall
+•	Infrastructure as Code principles
+Architecture
+The solution consists of the following components:
+•	2x Virtual Machines deployed from custom images
+•	1x Azure Firewall for network security
+•	1x Azure Compute Gallery for image management
+•	1x Virtual Network with proper subnet segmentation
+•	Custom web application pre-installed on all VMs
+
+Technical Implementation
+Phase 1: Custom Image Creation
+1.	Created a base Windows Server 2022 VM.
+2.	Installed and configured IIS Web Server.
+3.	Developed a custom web application.
+4.	Generalized the VM and captured it as a managed image.
+5.	Stored the image in Azure Compute Gallery for reusability and rapid deployment.
+Phase 2: Infrastructure Deployment
+1.	Deployed 2x VMs (WebServer1, WebServer2) from the custom image.
+2.	Configured appropriate networking and security groups for the VMs.
+3.	Verified successful application deployment across both VM instances.
+Phase 3: Network Security Implementation
+1.	Deployed Azure Firewall (Standard SKU) for network security.
+2.	Configured application rules for web traffic (HTTP/HTTPS).
+3.	Implemented network rules for internal communication between VMs.
+4.	Established NAT rules for secure remote access.
+
+Security Features
+•	Network Segmentation: Separate subnets for VMs and firewall management to isolate and protect resources.
+•	Traffic Control: Centralized firewall rules for controlling all inbound and outbound traffic.
+•	Access Management: Granular policies to control inbound/outbound traffic and secure access to resources.
+•	Infrastructure Protection: Azure Firewall acts as the network security hub, offering comprehensive protection.
+Key Achievements
+•	Scalable Architecture: Custom images enable rapid and consistent VM deployment.
+•	Security Best Practices: Implemented a defense-in-depth strategy with network segmentation and centralized firewall rules.
+•	Cost Optimization: Leveraged Standard SKU for Azure Firewall, balancing feature richness with cost efficiency.
+•	Automation Ready: The infrastructure is templated for Infrastructure as Code (IaC) deployment using tools like ARM templates or Terraform.
+Technologies Used
+•	Azure Virtual Machines: Core compute infrastructure for deploying web servers.
+•	Azure Compute Gallery: Efficient image management and distribution of custom VM images.
+•	Azure Firewall: Ensures network security and traffic control for the entire architecture.
+•	Azure Virtual Network: Provides secure and segmented network infrastructure.
+•	IIS Web Server: Hosts the custom web application on each VM.
+•	Windows Server 2022: The operating system used for all VMs.
+Results
+•	Successfully deployed a scalable web infrastructure with multiple VMs.
+•	Achieved centralized network security management using Azure Firewall.
+•	Demonstrated enterprise-grade Azure architecture skills in building secure, scalable, and cost-effective solutions.
+Future Enhancements
+•	Implement Azure Load Balancer for enhanced high availability.
+•	Integrate Azure Application Gateway for additional web application firewall security.
+•	Add Azure Monitor for comprehensive logging and monitoring of the infrastructure.
+•	Automate future deployments using ARM templates or Terraform for Infrastructure as Code (IaC).
+
+Visual Documentation
+All screenshots and architectural diagrams are available in the /screenshots folder, documenting every step of the implementation process.
+•	Azure Architecture Overview
+•	Custom Image Gallery
+•	VM Deployment
+•	Network Security Implementation
+•	Firewall Rules
+•	Working Website
+
+Skills Demonstrated
+•	Azure Infrastructure
+•	Network Security
+•	VM Management
+•	Custom Image Creation
+•	Firewall Configuration
+•	Cloud Architecture Design
